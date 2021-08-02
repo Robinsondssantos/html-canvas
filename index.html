@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas</title>
+</head>
+<body>
+  <canvas 
+    id="rootCanvas" 
+    width="600" 
+    height="400"
+    style="border: 1px solid #d3d3d3;"
+  >
+  </canvas>
+</body>
+<script>
+  var rootCanvas = document.getElementById("rootCanvas");
+  var context = rootCanvas.getContext("2d");
+  context.moveTo(0, 0);
+  // context.lineTo(600, 400);
+  context.fillRect(0, 300, 10, 100);
+  context.fillRect(20, 300, 10, 100);
+  context.fillRect(40, 300, 10, 100);
+  context.fillRect(60, 300, 10, 100);
+  context.fillRect(80, 300, 10, 100);
+  context.fillRect(100, 300, 10, 100);
+</script>
+</html>
